@@ -31,11 +31,6 @@ h1 {
     text-align: center;
 }
 
-.profile__copy {
-    margin: 32px auto;
-    max-width: 120ch;
-    font-style: italic;
-}
 
 
 .profile__avatar {
@@ -44,4 +39,20 @@ h1 {
     height: 200px;
     border: 3px solid #fff;
     box-shadow: 0px 4px 4px #0004;
+}
+
+.profile__copy {
+    margin: 32px auto;
+    max-width: 120ch;
+    font-style: italic;
+}
+
+.profile__social {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: fit-content;
 }
