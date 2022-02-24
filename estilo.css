@@ -1,5 +1,8 @@
 :root{
     font-family: sans-serif;
+    --color-link: #0085ff;
+    --color-greenup: #02381c;
+    --color-greendown: #02530f;
 }
 
 body {
@@ -12,7 +15,7 @@ header {
     height: 50vh;
     font-size: 30px;
     font-style: initial;
-    background: linear-gradient(to right bottom,#02381c,#02530f) ;
+    background: linear-gradient(to right bottom,var(--color-greenup), var(--color-greendown) ); 
     display: grid;
     place-items: center ;
     box-shadow: 0px 4px 4px #fff;
@@ -27,11 +30,8 @@ h1 {
 .profile {
     position: relative;
     top: -100px; 
-    border: 5px dotted greenyellow;
     text-align: center;
 }
-
-
 
 .profile__avatar {
     border-radius: 50%;
@@ -47,7 +47,8 @@ h1 {
     font-style: italic;
 }
 
-.profile__social {
+.profile__social,
+.footer__social {
     display: grid;
     grid-auto-flow: column;
     gap: 16px;
@@ -55,5 +56,23 @@ h1 {
     padding: 0;
     list-style: none;
     width: fit-content;
-    color: #0085ff;
+    color: var(--color-link);
+}
+
+footer {
+    box-sizing: border-box; /*ou usar "calc (100 - 32px)" no width*/
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 16px;
+    background: #fff;
+    color: #000;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.footer__social {
+    margin: 0;
+    justify-self: end;
 }
