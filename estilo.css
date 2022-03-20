@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 :root{
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     --color-link: #0085ff;
     --color-greenup: #02381c;
     --color-greendown: #02530f;
@@ -56,17 +58,22 @@ h1 {
     padding: 0;
     list-style: none;
     width: fit-content;
-    color: var(--color-link);
+    color: #fff;
+}
+
+.profile__social a:hover {
+    color: #015;
 }
 
 footer {
+    font-size: 1.5rem;
     box-sizing: border-box; /*ou usar "calc (100 - 32px)" no width*/
     position: fixed;
     bottom: 0;
     width: 100vw;
     padding: 16px;
-    background: #fff;
-    color: #000;
+    background: linear-gradient(to right bottom, var(--color-greendown), var(--color-greenup) );
+    color: #fff;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
